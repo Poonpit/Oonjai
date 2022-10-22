@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  server:
+    image: warathep187/oonjai-server
+    ports:
+      - 80:80
+    container_name: Oonjai
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql
+    ports:
+      - 3306:3306
+    volumes: 
+      - data:/mysql/data
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+    container_name: mysql
+
+volumes:
+  data:

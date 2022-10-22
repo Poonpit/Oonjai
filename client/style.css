@@ -1,0 +1,11 @@
+/* .ql-toolbar:first-child {
+    display: none;
+} */
+
+.latest-question-item:hover, .recommended-blog-item:hover, .relate-blog-item:hover, .latest-blog-item:hover {
+    box-shadow: 1px 1px 1px gray;
+}
+
+.admin-blogs-item:hover, .admin-question-item:hover {
+    text-decoration: underline;
+}
